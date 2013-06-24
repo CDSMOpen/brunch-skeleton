@@ -2,13 +2,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Mocha Tests</title>
-	<link rel="stylesheet" href="css/test.css" />
+	<link rel="stylesheet" href="stylesheets/test.css" />
 	
 	<script>
 		window.locale = function(key){return key};
 	</script>
 	
-	<script src="../javascripts/vendor-local.js"></script>
 	<script src="../javascripts/vendor.js"></script>
 	<script src="../javascripts/app.js"></script>
 	<script src="javascripts/test-vendor.js"></script>
@@ -16,20 +15,7 @@
 		mocha.setup({
 			ui: 'bdd',
 			globals: [
-				'App',
-				'Backbone',
-				'bannedInputsBase64',
-				'locale',
-				'editMode',
-				'setTimeout',
-				'clearTimeout',
-				'setInterval',
-				'clearInterval',
-				'getAPI',
-				'Modernizr',
-				'g_intAPIOrder',
-				'g_objAPI',
-				'indexLetter'
+				'Backbone'
 			]
 		});
 		window.should = chai.should()

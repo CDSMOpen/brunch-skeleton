@@ -12,6 +12,7 @@ exports.config =
 				# even if they aren't specified in order.before.
 				before: [
 					'vendor/scripts/jquery-1.10.1.js'
+					'vendor/scripts/jquery-migrate-1.2.1.js'
 					'vendor/scripts/underscore-1.4.4.js'
 					'vendor/scripts/backbone-0.9.2.js'
 

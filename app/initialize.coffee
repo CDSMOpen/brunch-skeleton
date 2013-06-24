@@ -1,4 +1,3 @@
-# 
 
 module.exports = (customConfig) ->
 	
@@ -12,4 +11,4 @@ module.exports = (customConfig) ->
 		delete Backbone.Model::escape
 		
 		# Kick off the application
-		console.log 'Start the Application!!!'
+		console.log 'Run Application!!!'
