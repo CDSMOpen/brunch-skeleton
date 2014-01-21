@@ -18,3 +18,8 @@ Run
     git checkout develop
 
 Now simply stage and commit this repository as your initial version. If using a remote repository now is a good time to push it there.
+
+Run
+
+    npm install
+    npm start
