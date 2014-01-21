@@ -1,0 +1,11 @@
+{
+  "directory": "bower_components",
+  "registry": {
+    "search": [
+      "http://nodehost.cdsm3.co.uk:8080",
+      "http://bower.heroku.com"
+    ],
+    "register": "http://nodehost.cdsm3.co.uk:8080",
+    "publish": "http://nodehost.cdsm3.co.uk:8080"
+  }
+}

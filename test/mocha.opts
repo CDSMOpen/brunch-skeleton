@@ -1,6 +1,0 @@
---compilers coffee:coffee-script
---reporter spec
---ui bdd
---globals $,_,thinqi,Backbone,App,cache,locale,editMode,indexLetter,bannedInputsBase64
---watch
---growl

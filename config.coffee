@@ -4,20 +4,9 @@ exports.config =
 		javascripts:
 			joinTo:
 				'javascripts/app.js': /^app/
-				'javascripts/vendor.js': /^vendor/
+				'javascripts/vendor.js': /^(bower_components|vendor)/
 				'test/javascripts/test.js': /^test[\\/](?!vendor)/
 				'test/javascripts/test-vendor.js': /^test[\\/](?=vendor)/
-			order:
-				# Files in `vendor` directories are compiled before other files
-				# even if they aren't specified in order.before.
-				before: [
-					'vendor/scripts/jquery-1.10.1.js'
-					'vendor/scripts/jquery-migrate-1.2.1.js'
-					'vendor/scripts/underscore-1.4.4.js'
-					'vendor/scripts/backbone-0.9.2.js'
-
-					'vendor/scripts/cdsm/support/view.coffee'
-				]
 		
 		stylesheets:
 			joinTo:
@@ -29,3 +18,5 @@ exports.config =
 		
 	server:
 		port: 3333
+	
+	sourceMaps: false

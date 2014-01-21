@@ -1,12 +1,12 @@
 {
 	"author": "",
-	"name": "",
+	"name": "project-name-here",
 	"description": "",
-	"version": "0.0.1",
+	"version": "0.0.0",
 	"homepage": "",
 	"repository":
 	{
-		"type": "subversion",
+		"type": "git",
 		"url": ""
 	},
 	"engines":
@@ -15,29 +15,28 @@
 	},
 	"scripts":
 	{
+		"install" : "bower install",
 		"start": "brunch watch --server",
+		"watch": "brunch watch",
 		"build": "brunch build",
 		"release": "brunch build -o",
-		"test": "brunch test",
-		"test-teamcity": "brunch test -r teamcity"
+		"test": "mocha-phantomjs -R dot public/test/index.html",
+		"test-teamcity": "mocha-phantomjs -R teamcity public/test/index.html"
 	},
 	"dependencies":
 	{
-		"brunch": "https://github.com/ianllewellyn/brunch/tarball/master",
-		
-		"javascript-brunch": ">= 1.0 < 1.5",
-		"coffee-script-brunch": "1.4.0",
-		"css-brunch": ">= 1.0 < 1.5",
-		"eco-brunch": ">= 1.0 < 1.5",
-		"uglify-js-brunch": ">= 1.0 < 1.5",
-		"clean-css-brunch": ">= 1.0 < 1.5"
+		"brunch": "1.7.2",
+		"javascript-brunch": ">= 1.0 < 1.8",
+		"coffee-script-brunch": ">= 1.0 < 1.8",
+		"css-brunch": ">= 1.0 < 1.8",
+		"eco-brunch": ">= 1.0 < 1.8",
+		"uglify-js-brunch": ">= 1.0 < 1.8",
+		"clean-css-brunch": ">= 1.0 < 1.8"
 	},
 	"devDependencies":
 	{
-		"chai": "1.2.0",
-		"sinon": "1.4.2",
-		"sinon-chai": "2.1.2",
-		"backbone": "0.9.2",
-		"jsdom": "~0.2.15"
+		"phantomjs": "1.9.1-0",
+		"mocha-phantomjs": "3.1.0",
+		"bower": "1.2.6"
 	}
 }
