@@ -19,6 +19,8 @@ Run
 
 Now simply stage and commit this repository as your initial version. If using a remote repository now is a good time to push it there.
 
+Ensure you have NodeJS (nodejs.org) and bower installed globally (npm install bower -g).
+
 Run
 
     npm install
